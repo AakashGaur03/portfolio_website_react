@@ -14,7 +14,7 @@ const Portfolio = ({isActive}) => {
     },
     {
       link1: "https://github.com/AakashGaur03/WordWonders",
-      link2: "T",
+      link2: "https://wordwonders-by-aakash-gaur.000webhostapp.com/",
       id: "Dictionary",
       image: "Dictionary",
       video: "DictionaryVideo",
@@ -30,7 +30,7 @@ const Portfolio = ({isActive}) => {
     },
     {
       link1: "https://github.com/AakashGaur03/Rock_Paper_Scissor_Game",
-      link2: "K",
+      link2: "https://rock-paper-scissors-by-aakash-gaur.000webhostapp.com/",
       id: "RockPaperScissors",
       image: "RockPaperScissors",
       video: "RockPaperScissorsVideo",
@@ -45,7 +45,7 @@ const Portfolio = ({isActive}) => {
     },
     {
       link1: "https://github.com/AakashGaur03/_SKYCAST",
-      link2: "G",
+      link2: "https://skycast-by-aakash-gaur.000webhostapp.com/",
       id: "SkyCast",
       image: "SkyCast",
       video: "SkyCastVideo",
