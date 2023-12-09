@@ -9,7 +9,7 @@ const Portfolio = ({isActive}) => {
       link1: "https://github.com/AakashGaur03/Clock",
       id: "Clock",
       image: "Clock",
-      video: "ClockVideo",
+      video: "ClockComressed",
       customClass: "compActiveLeft",
     },
     {
@@ -17,7 +17,7 @@ const Portfolio = ({isActive}) => {
       link2: "https://wordwonders-by-aakash-gaur.000webhostapp.com/",
       id: "Dictionary",
       image: "Dictionary",
-      video: "DictionaryVideo",
+      video: "DictionaryComressed",
       customClass: "compActiveRight",
     },
     {
@@ -25,7 +25,7 @@ const Portfolio = ({isActive}) => {
       link2: "https://landingpage-byaakashgaur.000webhostapp.com/",
       id: "LandingPage",
       image: "LandingPage",
-      video: "LandingPageVideo",
+      video: "LandingPageVideoComressed",
       customClass: "compActiveLeft",
     },
     {
@@ -48,7 +48,7 @@ const Portfolio = ({isActive}) => {
       link2: "https://skycast-by-aakash-gaur.000webhostapp.com/",
       id: "SkyCast",
       image: "SkyCast",
-      video: "SkyCastVideo",
+      video: "SkyCastCompressed",
       customClass: "compActiveRight",
     },
   ];

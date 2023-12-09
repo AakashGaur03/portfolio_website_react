@@ -24,12 +24,28 @@ body {
   border-bottom: 2px solid black !important;
   cursor: pointer;
 }
+@media (max-width: 991px) {
+  .mainnavbar {
+    background-color: transparent !important;
+  }
+  .smallScreenNavaToggle {
+    background-color: #787878  !important;
+  }
+  .smallScreenNav {
+    padding: 20px !important;
+    width: 200px;
+    background-color: #787878 !important;
+  }
+  .navbar-collapse{
+    margin-top: 20px !important;
+  }
+}
 .mainnavbar {
   position: fixed !important;
   min-width: 100vw;
   top: 0;
   z-index: 5;
-  background-color: #787878 !important;
+  background-color: #787878 ;
 }
 .active {
   border-bottom: 2px solid black !important;
@@ -48,11 +64,12 @@ body {
   position: relative;
   font-family: "EB Garamond", serif !important;
   min-height: 100vh;
-  padding-top: 90px;
+  padding-top: 80px;
 }
 .AboutImage:hover {
   cursor: pointer;
-  filter: drop-shadow(0.6rem -0.4rem 2rem rgba(51, 12, 88, 0.8));
+  /* filter: drop-shadow(0.6rem -0.4rem 2rem rgba(51, 12, 88, 0.8)); */
+  filter: drop-shadow(0.6rem -0.4rem 2rem #103440);
 }
 .headings {
   color: rebeccapurple;
@@ -100,7 +117,7 @@ body {
   font-family: "Poppins", sans-serif !important;
   font-weight: 500;
   font-size: large;
-  padding-top: 90px;
+  padding-top: 60px;
 
   min-height: 100vh;
 }
@@ -115,7 +132,7 @@ body {
   z-index: 1;
   position: relative;
   min-height: 100vh;
-  padding-top: 90px;
+  padding-top: 60px;
 }
 .image-container {
   position: relative;
@@ -227,6 +244,8 @@ body {
 }
 .anchorContact:hover {
   /* color:#69ff7c; */
+  font-size: 20px;
+  transition: font-size 0.3s;
   color: white;
   text-decoration: none;
 }
@@ -253,10 +272,13 @@ body {
 @keyframes fadeLeft {
   from {
     opacity: 0;
-    transform: translateX(-70px);
+    /* transform: translateX(-70px); */
+    margin-left: -70px;
   }
   to {
-    transform: translateX(0px);
+    /* transform: translateX(0px); */
+    margin-left: 0px;
+
     opacity: 1;
   }
 }
@@ -264,10 +286,13 @@ body {
 @keyframes fadeRight {
   from {
     opacity: 0;
-    transform: translateX(70px);
+    margin-left: 170px;
+    /* transform: translateX(70px); */
   }
   to {
-    transform: translateX(0px);
+    margin-left: 0px;
+
+    /* transform: translateX(0px); */
     opacity: 1;
   }
 }

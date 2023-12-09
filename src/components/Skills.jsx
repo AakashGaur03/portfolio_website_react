@@ -49,7 +49,7 @@ const Skills = ({isActive}) => {
           </div>
           <div className="col-md-4 d-flex align-items-center justify-content-center">
             <img
-              src="../Images/skilsicon.png"
+              src="../Images/SkillsIcon.png"
               alt=""
               className={`SkillsImage mt-3 ${isActive?'compActiveRight':''} `}
             />

@@ -25,7 +25,7 @@ const About = ({ isActive }) => {
         <div className="displayAboutSection">
           <div className="align-self-center text-center">
             <img
-              src="../Images/Aboutus.png"
+              src="../Images/AvatarPhoto.png"
               style={imagestyle}
               className={`AboutImage ${isActive ? "compActiveLeft" : ""}`}
               alt=""
