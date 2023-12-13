@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import { VscGithubInverted } from "react-icons/vsc";
 import { FaGlobeEurope } from "react-icons/fa";
 
-const Portfolio = ({isActive}) => {
+const Portfolio = ({ isActive }) => {
   const portfolioItems = [
     {
       link1: "https://github.com/AakashGaur03/Clock",
@@ -54,6 +54,7 @@ const Portfolio = ({isActive}) => {
   ];
   const [isHovered, setIsHovered] = useState(false);
   const [activeId, setActiveId] = useState("");
+  const [videoLoading, setVideoLoading] = useState(false);
 
   const handleMouseEnter = (id) => {
     setActiveId(id);
@@ -63,64 +64,76 @@ const Portfolio = ({isActive}) => {
     setActiveId("");
     setIsHovered(false);
   };
+
+  const handleVideoLoadStart=()=>{
+    setVideoLoading(true)
+  }
+  const handleVideoLoadData=()=>{
+    setVideoLoading(false)
+  }
   return (
     <section id="Portfolio" className="mainPortfolio">
       <h1 className="text-center mb-5 mt-4 headings">Portfolio</h1>
       <Container>
         <div className="row">
-          {portfolioItems.map(({ link1, link2, id, image, video,customClass }) => (
-            <div
-              key={id}
-              className="col-md-6 d-flex flex-co lumn align-self-center justify-content-center pb-3"
-            >
+          {portfolioItems.map(
+            ({ link1, link2, id, image, video, customClass }) => (
               <div
-                className={`image-container ${isActive?customClass:''}`}
-                onMouseEnter={() => handleMouseEnter(id)}
-                onMouseLeave={() => handleMouseLeave(id)}
+                key={id}
+                className="col-md-6 d-flex flex-co lumn align-self-center justify-content-center pb-3"
               >
-                {isHovered && id == activeId ? (
-                  <div>
-                    <video
-                      className="video-player"
-                      src={`../Images/portfolioMedia/${video}.mp4`}
-                      loop
-                      muted
-                      autoPlay
-                    ></video>
+                <div
+                  className={`image-container ${isActive ? customClass : ""}`}
+                  onMouseEnter={() => handleMouseEnter(id)}
+                  onMouseLeave={() => handleMouseLeave(id)}
+                >
+                  {isHovered && id == activeId ? (
+                    <div>
+                      <video
+                        className="video-player"
+                        src={`../Images/portfolioMedia/${video}.mp4`}
+                        loop
+                        muted
+                        autoPlay
+                        onLoadedData={handleVideoLoadData}
+                        onLoadStart={handleVideoLoadStart}
+                      ></video>
+                      {videoLoading && <img src="../Images/Loader.gif" alt="" className="loaderClass" />}
 
-                    {link1 && link2 ? (
-                      <div>
-                        <a href={link1} target="_blank">
-                          <button className="portfoliovideobtn1">
-                            <VscGithubInverted size={25} />
-                          </button>
-                        </a>
-                        <a href={link2} target="_blank">
-                          <button className="portfoliovideobtn2">
-                            <FaGlobeEurope  size={25}/>
-                          </button>
-                        </a>
-                      </div>
-                    ) : (
-                      <span>
-                        <a href={link1} target="_blank">
-                          <button className="portfoliovideobtn3">
-                            <VscGithubInverted size={28} />
-                          </button>
-                        </a>
-                      </span>
-                    )}
-                  </div>
-                ) : (
-                  <img
-                    src={`../Images/portfolioMedia/${image}.png`}
-                    className="img-fluid imagePortfolio"
-                    alt=""
-                  />
-                )}
+                      {link1 && link2 ? (
+                        <div>
+                          <a href={link1} target="_blank">
+                            <button className="portfoliovideobtn1">
+                              <VscGithubInverted size={25} />
+                            </button>
+                          </a>
+                          <a href={link2} target="_blank">
+                            <button className="portfoliovideobtn2">
+                              <FaGlobeEurope size={25} />
+                            </button>
+                          </a>
+                        </div>
+                      ) : (
+                        <span>
+                          <a href={link1} target="_blank">
+                            <button className="portfoliovideobtn3">
+                              <VscGithubInverted size={28} />
+                            </button>
+                          </a>
+                        </span>
+                      )}
+                    </div>
+                  ) : (
+                    <img
+                      src={`../Images/portfolioMedia/${image}.png`}
+                      className="img-fluid imagePortfolio"
+                      alt=""
+                    />
+                  )}
+                </div>
               </div>
-            </div>
-          ))}
+            )
+          )}
         </div>
       </Container>
     </section>

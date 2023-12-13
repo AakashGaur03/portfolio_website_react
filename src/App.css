@@ -27,16 +27,17 @@ body {
 @media (max-width: 991px) {
   .mainnavbar {
     background-color: transparent !important;
+    padding: 0 !important;
   }
   .smallScreenNavaToggle {
-    background-color: #787878  !important;
+    background-color: #787878 !important;
   }
   .smallScreenNav {
     padding: 20px !important;
     width: 200px;
     background-color: #787878 !important;
   }
-  .navbar-collapse{
+  .navbar-collapse {
     margin-top: 20px !important;
   }
 }
@@ -45,7 +46,7 @@ body {
   min-width: 100vw;
   top: 0;
   z-index: 5;
-  background-color: #787878 ;
+  background-color: #787878;
 }
 .active {
   border-bottom: 2px solid black !important;
@@ -241,13 +242,12 @@ body {
 .anchorContact {
   color: #e3ca7e;
   text-decoration: none;
+  transition: 0.6s;
 }
 .anchorContact:hover {
-  /* color:#69ff7c; */
-  font-size: 20px;
-  transition: font-size 0.3s;
   color: white;
-  text-decoration: none;
+  transition: 0.6s;
+  transform: scale(1.2);
 }
 .iconsContact {
   color: #2f7e93;
@@ -301,4 +301,20 @@ body {
 }
 .compActiveRight {
   animation: fadeRight 1s linear;
+}
+@media (max-width: 525px){
+  .compActiveLeft {
+    animation: none;
+  }
+  .compActiveRight {
+    animation: none;
+  } 
+}
+.hidden {
+  display: none;
+}
+.loaderClass{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
