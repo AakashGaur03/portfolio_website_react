@@ -202,7 +202,7 @@ body {
 
 .mainContactMe {
   z-index: 1;
-  min-height: 100vh;
+  min-height: 92vh;
   padding-top: 90px;
 
   position: relative;
@@ -302,19 +302,42 @@ body {
 .compActiveRight {
   animation: fadeRight 1s linear;
 }
-@media (max-width: 525px){
+@media (max-width: 525px) {
   .compActiveLeft {
     animation: none;
   }
   .compActiveRight {
     animation: none;
-  } 
+  }
 }
 .hidden {
   display: none;
 }
-.loaderClass{
+.loaderClass {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+}
+.mainFooter {
+  position: relative;
+  background-color: #787878;
+  z-index: 1;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: black;
+}
+.footerHeading{
+  font-size: 32px;
+  font-weight: 500;
+}
+@media (max-width: 525px) {
+  .mainFooter {
+    display: block;
+    text-align: center;
+  }
+.footerHeading{
+  font-size: 18px;
+}
+
 }

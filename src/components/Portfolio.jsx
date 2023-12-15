@@ -82,8 +82,9 @@ const Portfolio = ({ isActive }) => {
                 key={id}
                 className="col-md-6 d-flex flex-co lumn align-self-center justify-content-center pb-3"
               >
+                {/* Made customClass in " " beacuse of inconsistency in animation */}
                 <div
-                  className={`image-container ${isActive ? customClass : ""}`}
+                  className={`image-container ${isActive ? "customClass" : ""}`}
                   onMouseEnter={() => handleMouseEnter(id)}
                   onMouseLeave={() => handleMouseLeave(id)}
                 >

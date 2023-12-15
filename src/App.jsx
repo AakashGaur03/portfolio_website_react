@@ -8,6 +8,7 @@ import Portfolio from "./components/Portfolio";
 import ContactMe from "./components/ContactMe";
 import { useEffect, useState } from "react";
 import BubbleComponent from "./components/BubbleComponent";
+import Footer from "./components/Footer";
 
 function App() {
   const [activeLink,setActiveLink]=useState('home')
@@ -24,6 +25,7 @@ function App() {
       <Skills isActive={activeLink==='skills'} />
       <Portfolio isActive={activeLink==='portfolio'}/>
       <ContactMe isActive={activeLink==='contact'}/>
+      <Footer />
     </>
   );
 }
