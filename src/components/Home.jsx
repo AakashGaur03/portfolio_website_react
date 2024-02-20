@@ -19,7 +19,7 @@ const Home = ({isActive}) => {
     <section id="Home" className='MainHome d-flex justify-content-center align-items-center'>
         <Container className='d-flex justify-content-center align-items-center'>
         <div className={`${isActive ? "compActiveLeft" : ""}`}>
-            <img src="../Images/somethimg.png" className='imagestyle'  alt="" />
+            <img src="./Images/somethimg.png" className='imagestyle'  alt="" />
         </div>
         <div className={`text-white ${isActive?'compActiveRight':''}`}  style={textstyle}>
         <h1 className='fs-1 fw-bold'>Aakash Gaur</h1>

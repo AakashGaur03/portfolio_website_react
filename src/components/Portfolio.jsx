@@ -6,11 +6,19 @@ import { FaGlobeEurope } from "react-icons/fa";
 const Portfolio = ({ isActive }) => {
   const portfolioItems = [
     {
+      link1: "https://github.com/AakashGaur03/ZSYNC_PRO",
+      link2: "https://aakashgaur03.github.io/ZSYNC_PRO/",
+      id: "Zsync",
+      image: "ZsyncPro",
+      video: "ZsyncProVideo",
+      customClass: "compActiveLeft",
+    },
+    {
       link1: "https://github.com/AakashGaur03/Clock",
       id: "Clock",
       image: "Clock",
       video: "ClockComressed",
-      customClass: "compActiveLeft",
+      customClass: "compActiveRight",
     },
     {
       link1: "https://github.com/AakashGaur03/WordWonders",
@@ -18,7 +26,7 @@ const Portfolio = ({ isActive }) => {
       id: "Dictionary",
       image: "Dictionary",
       video: "DictionaryComressed",
-      customClass: "compActiveRight",
+      customClass: "compActiveLeft",
     },
     {
       link1: "https://github.com/AakashGaur03/Landing-Page",
@@ -26,7 +34,7 @@ const Portfolio = ({ isActive }) => {
       id: "LandingPage",
       image: "LandingPage",
       video: "LandingPageVideoComressed",
-      customClass: "compActiveLeft",
+      customClass: "compActiveRight",
     },
     {
       link1: "https://github.com/AakashGaur03/Rock_Paper_Scissor_Game",
@@ -34,14 +42,14 @@ const Portfolio = ({ isActive }) => {
       id: "RockPaperScissors",
       image: "RockPaperScissors",
       video: "RockPaperScissorsVideo",
-      customClass: "compActiveRight",
+      customClass: "compActiveLeft",
     },
     {
       link1: "https://github.com/AakashGaur03/TIc_Tac_Toe",
       id: "TicTacToe",
       image: "TicTacToe",
       video: "TicTacToeVideo",
-      customClass: "compActiveLeft",
+      customClass: "compActiveRight",
     },
     {
       link1: "https://github.com/AakashGaur03/_SKYCAST",
@@ -49,7 +57,7 @@ const Portfolio = ({ isActive }) => {
       id: "SkyCast",
       image: "SkyCast",
       video: "SkyCastCompressed",
-      customClass: "compActiveRight",
+      customClass: "compActiveLeft",
     },
   ];
   const [isHovered, setIsHovered] = useState(false);
