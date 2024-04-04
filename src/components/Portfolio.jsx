@@ -14,11 +14,20 @@ const Portfolio = ({ isActive }) => {
       customClass: "compActiveLeft",
     },
     {
-      link1: "https://github.com/AakashGaur03/Clock",
-      id: "Clock",
-      image: "Clock",
-      video: "ClockComressed",
+      link1: "https://github.com/AakashGaur03/Landing-Page",
+      link2: "https://landingpage-byaakashgaur.000webhostapp.com/",
+      id: "LandingPage",
+      image: "LandingPage",
+      video: "LandingPageVideoComressed",
       customClass: "compActiveRight",
+    },
+    {
+      link1: "https://github.com/AakashGaur03/_SKYCAST",
+      link2: "https://skycast-by-aakash-gaur.000webhostapp.com/",
+      id: "SkyCast",
+      image: "SkyCast",
+      video: "SkyCastCompressed",
+      customClass: "compActiveLeft",
     },
     {
       link1: "https://github.com/AakashGaur03/WordWonders",
@@ -27,14 +36,6 @@ const Portfolio = ({ isActive }) => {
       image: "Dictionary",
       video: "DictionaryComressed",
       customClass: "compActiveLeft",
-    },
-    {
-      link1: "https://github.com/AakashGaur03/Landing-Page",
-      link2: "https://landingpage-byaakashgaur.000webhostapp.com/",
-      id: "LandingPage",
-      image: "LandingPage",
-      video: "LandingPageVideoComressed",
-      customClass: "compActiveRight",
     },
     {
       link1: "https://github.com/AakashGaur03/Rock_Paper_Scissor_Game",
@@ -52,12 +53,11 @@ const Portfolio = ({ isActive }) => {
       customClass: "compActiveRight",
     },
     {
-      link1: "https://github.com/AakashGaur03/_SKYCAST",
-      link2: "https://skycast-by-aakash-gaur.000webhostapp.com/",
-      id: "SkyCast",
-      image: "SkyCast",
-      video: "SkyCastCompressed",
-      customClass: "compActiveLeft",
+      link1: "https://github.com/AakashGaur03/Clock",
+      id: "Clock",
+      image: "Clock",
+      video: "ClockComressed",
+      customClass: "compActiveRight",
     },
   ];
   const [isHovered, setIsHovered] = useState(false);
@@ -73,12 +73,12 @@ const Portfolio = ({ isActive }) => {
     setIsHovered(false);
   };
 
-  const handleVideoLoadStart=()=>{
-    setVideoLoading(true)
-  }
-  const handleVideoLoadData=()=>{
-    setVideoLoading(false)
-  }
+  const handleVideoLoadStart = () => {
+    setVideoLoading(true);
+  };
+  const handleVideoLoadData = () => {
+    setVideoLoading(false);
+  };
   return (
     <section id="Portfolio" className="mainPortfolio">
       <h1 className="text-center mb-5 mt-4 headings">Portfolio</h1>
@@ -107,7 +107,13 @@ const Portfolio = ({ isActive }) => {
                         onLoadedData={handleVideoLoadData}
                         onLoadStart={handleVideoLoadStart}
                       ></video>
-                      {videoLoading && <img src="../Images/Loader.gif" alt="" className="loaderClass" />}
+                      {videoLoading && (
+                        <img
+                          src="../Images/Loader.gif"
+                          alt=""
+                          className="loaderClass"
+                        />
+                      )}
 
                       {link1 && link2 ? (
                         <div>
