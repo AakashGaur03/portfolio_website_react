@@ -13,7 +13,9 @@ const Skills = ({isActive}) => {
     { id: 6, label: "Ajax", value: 80 },
     { id: 7, label: "React", value: 75 },
     { id: 8, label: "Vue", value: 75 },
-    { id: 9, label: "MongoDB", value: 50 },
+    { id: 9, label: "MongoDB", value: 70 },
+    { id: 9, label: "ExpressJS", value: 70 },
+    { id: 9, label: "Flutter", value: 70 },
   ];
 
   return (
