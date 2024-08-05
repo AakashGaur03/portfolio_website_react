@@ -15,7 +15,7 @@ const Portfolio = ({ isActive }) => {
     },
     {
       link1: "https://github.com/AakashGaur03/Landing-Page",
-      link2: "https://landingpage-byaakashgaur.000webhostapp.com/",
+      link2: "https://aakashgaur03.github.io/Landing-Page/",
       id: "LandingPage",
       image: "LandingPage",
       video: "LandingPageVideoComressed",
@@ -23,7 +23,7 @@ const Portfolio = ({ isActive }) => {
     },
     {
       link1: "https://github.com/AakashGaur03/_SKYCAST",
-      link2: "https://skycast-by-aakash-gaur.000webhostapp.com/",
+      link2: "https://aakashgaur03.github.io/_SKYCAST/",
       id: "SkyCast",
       image: "SkyCast",
       video: "SkyCastCompressed",
@@ -31,7 +31,7 @@ const Portfolio = ({ isActive }) => {
     },
     {
       link1: "https://github.com/AakashGaur03/WordWonders",
-      link2: "https://wordwonders-by-aakash-gaur.000webhostapp.com/",
+      link2: "https://aakashgaur03.github.io/WordWonders/",
       id: "Dictionary",
       image: "Dictionary",
       video: "DictionaryComressed",
@@ -39,7 +39,7 @@ const Portfolio = ({ isActive }) => {
     },
     {
       link1: "https://github.com/AakashGaur03/Rock_Paper_Scissor_Game",
-      link2: "https://rock-paper-scissors-by-aakash-gaur.000webhostapp.com/",
+      link2: "https://aakashgaur03.github.io/Rock_Paper_Scissor_Game/",
       id: "RockPaperScissors",
       image: "RockPaperScissors",
       video: "RockPaperScissorsVideo",
@@ -54,6 +54,7 @@ const Portfolio = ({ isActive }) => {
     },
     {
       link1: "https://github.com/AakashGaur03/Clock",
+      link2: "https://aakashgaur03.github.io/Clock/",
       id: "Clock",
       image: "Clock",
       video: "ClockComressed",
