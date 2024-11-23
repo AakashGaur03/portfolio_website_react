@@ -1,9 +1,6 @@
-import React from "react";
 import "../App";
 import { Container, ProgressBar } from "react-bootstrap";
 const Skills = ({ isActive }) => {
-  const now = 80;
-
   const SkillsItem = [
     { id: 1, label: "HTML", value: 95 },
     { id: 2, label: "CSS", value: 90 },
@@ -15,8 +12,10 @@ const Skills = ({ isActive }) => {
     { id: 8, label: "Vue", value: 75 },
     { id: 9, label: "ExpressJS", value: 75 },
     { id: 10, label: "Node JS", value: 75 },
-    { id: 11, label: "MongoDB", value: 70 },
-    { id: 12, label: "Git", value: 70 },
+    { id: 11, label: "Next JS", value: 75 },
+    { id: 12, label: "Nest JS", value: 75 },
+    { id: 13, label: "MongoDB", value: 70 },
+    { id: 14, label: "Git", value: 70 },
     // { id: 12, label: "Flutter", value: 65 },
   ];
 
@@ -25,31 +24,20 @@ const Skills = ({ isActive }) => {
       <Container>
         <h1 className="mb-3 mt-3 text-center headings">Skills</h1>
         <div className={`mt-3 ${isActive ? "compActiveRight" : ""}`}>
-          Experience my proficiency in HTML, CSS, Bootstrap, JavaScript, jQuery,
-          Vue.js, and Ajax. I specialize in crafting visually stunning and
-          interactive web solutions, seamlessly merging innovation with
-          functionality to enhance the user experience. Ajax adds an extra layer
-          of dynamism, ensuring seamless and asynchronous communication for a
-          more responsive and engaging web presence.
+          Experience my proficiency in HTML, CSS, Bootstrap, JavaScript, jQuery, Vue.js, and Ajax. I specialize in
+          crafting visually stunning and interactive web solutions, seamlessly merging innovation with functionality to
+          enhance the user experience. Ajax adds an extra layer of dynamism, ensuring seamless and asynchronous
+          communication for a more responsive and engaging web presence.
         </div>
         <div className="row">
           <div className="col-md-8">
             <div className="row">
               {SkillsItem.map(({ id, label, value }) => (
-                <div
-                  key={id}
-                  className={`col-md-6 ${isActive ? "compActiveLeft" : ""}`}
-                >
+                <div key={id} className={`col-md-6 ${isActive ? "compActiveLeft" : ""}`}>
                   <label className="mt-4" htmlFor="">
                     {label}
                   </label>
-                  <ProgressBar
-                    striped
-                    animated
-                    now={value}
-                    className="AllProgressbar"
-                    label={`${value}%`}
-                  />
+                  <ProgressBar striped animated now={value} className="AllProgressbar" label={`${value}%`} />
                 </div>
               ))}
             </div>
@@ -58,9 +46,7 @@ const Skills = ({ isActive }) => {
             <img
               src="../Images/SkillsIcon.png"
               alt=""
-              className={`SkillsImage mt-3 ${
-                isActive ? "compActiveRight" : ""
-              } `}
+              className={`SkillsImage mt-3 ${isActive ? "compActiveRight" : ""} `}
             />
           </div>
         </div>
@@ -68,21 +54,17 @@ const Skills = ({ isActive }) => {
           <div className={`${isActive ? "compActiveRight" : ""}`}>
             <h2>Innovation and Functionality</h2>
             <div className="mt-3">
-              I am dedicated to merging innovation with functionality in my web
-              development projects. By staying abreast of the latest industry
-              trends and emerging technologies, I ensure that the web solutions
-              I create are not only visually stunning but also incorporate
-              cutting-edge features to enhance user engagement.
+              I am dedicated to merging innovation with functionality in my web development projects. By staying abreast
+              of the latest industry trends and emerging technologies, I ensure that the web solutions I create are not
+              only visually stunning but also incorporate cutting-edge features to enhance user engagement.
             </div>
           </div>
           <div className={`${isActive ? "compActiveLeft" : ""}`}>
             <h2 className="mt-4">User Experience (UX) Focus</h2>
             <div className="mt-3">
-              I prioritize creating a positive user experience by designing
-              intuitive and user-friendly interfaces. This includes optimizing
-              the flow of information, ensuring accessibility, and implementing
-              responsive design principles for a seamless experience across
-              various devices.
+              I prioritize creating a positive user experience by designing intuitive and user-friendly interfaces. This
+              includes optimizing the flow of information, ensuring accessibility, and implementing responsive design
+              principles for a seamless experience across various devices.
             </div>
           </div>
         </div>
