@@ -31,14 +31,13 @@ function MainNavbar({ onNavItemClick }) {
         const sectionTop = section.offsetTop - 10;
         const sectionBottom = sectionTop + section.clientHeight;
 
-        const isSectionVisible =
-          scrollPosition >= sectionTop && scrollPosition < sectionBottom;
+        const isSectionVisible = scrollPosition >= sectionTop && scrollPosition < sectionBottom;
 
         if (isScrollingDown && isSectionVisible) {
           setActiveLink(id);
           onNavItemClick(id);
         }
-        if ( isSectionVisible) {
+        if (isSectionVisible) {
           setActiveLink(id);
         }
       });
@@ -64,21 +63,16 @@ function MainNavbar({ onNavItemClick }) {
         <Navbar.Brand className="smallScreenNav text-center" href="#home">
           Aakash Gaur
         </Navbar.Brand>
-        <Navbar.Toggle
-          aria-controls="basic-navbar-nav"
-          className="smallScreenNavaToggle"
-        />
+        <Navbar.Toggle aria-controls="basic-navbar-nav" className="smallScreenNavaToggle" />
         <Navbar.Collapse id="basic-navbar-nav NavBarSmallScreenMargin">
           <Nav className="ms-auto smallScreenNav navbaritems">
             {navItems.map(({ id, label }) => (
               <a
-                href={`${label==='Resume'?'/AakashCV.pdf': '#'+  label}`}
-                target={label === 'Resume' ? '_blank' : '_self'}
+                href={`${label === "Resume" ? "/AakashCV.pdf" : "#" + label}`}
+                target={label === "Resume" ? "_blank" : "_self"}
                 key={id}
                 onClick={() => handleNavItemClick(id)}
-                className={`nav-link text-center ${
-                  activeLink === id ? "active" : ""
-                }`}
+                className={`nav-link text-center ${activeLink === id ? "active" : ""}`}
               >
                 {label}
               </a>
