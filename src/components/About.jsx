@@ -11,9 +11,9 @@ const About = ({ isActive }) => {
       <Container>
         <h1 className="mb-4 text-center headings">About</h1>
         <div className={`mt-2 mb-3 fw-bolder fs-5 ${isActive ? "compActiveRight" : ""}`}>
-          Dedicated to the realms of programming and technology, I am driven by a passion for innovation and creative
-          design. Currently immersed in the role of a developer, I seek to gain valuable experience and contribute to
-          the ever-evolving landscape of technology.
+          Dedicated to the realms of programming and technology, I’m driven by a passion for innovation and creative
+          design. Currently a Full Stack Developer with over 1.5 years of experience, I’m focused on building scalable
+          solutions while continuously improving my technical expertise.
         </div>
 
         <div className="displayAboutSection">
@@ -28,37 +28,34 @@ const About = ({ isActive }) => {
           <div className={`${isActive ? "compActiveRight" : ""}`}>
             <div>
               <p className="fs-5 fw-medium">
-                Greetings! I'm Aakash Gaur, a computer science graduate from MERI, Delhi, Batch of 2024. My academic
-                journey has been a thrilling exploration of the intricate world of technology, and I've reveled in the
-                challenges and discoveries that come with it.
+                I’m Aakash Gaur, a Computer Science graduate from MERI, Delhi (Batch of 2024). My academic journey has
+                been an exciting exploration of technology, and I’m eager to contribute my skills to the ever-evolving
+                landscape of software development.
               </p>
             </div>
             <div>
               <h3 className="fw-bolder">Diverse Passions</h3>
               <p className="fs-5 fw-medium">
-                Beyond the realm of coding and algorithms, you'll find me on the cricket field, embodying the spirit of
-                competition and camaraderie. Coding isn't just a professional pursuit for me; it's a passion that fuels
-                my curiosity and creativity. Volunteering is another facet of my life, where I dedicate time to
-                contribute to causes close to my heart, fostering a sense of social responsibility.
+                Outside of coding, I’m passionate about cricket, where I embrace competition and teamwork. Volunteering
+                is also a core part of my life, as I believe in giving back to causes that matter and fostering a sense
+                of social responsibility.
               </p>
             </div>
             <div>
               <h3 className="fw-bolder">Strengths that Define Me</h3>
               <p className="fs-5 fw-medium">
-                In every pursuit, I bring a collaborative spirit to the table. My belief in the power of teamwork is
-                complemented by a commitment to punctuality, ensuring that every endeavor is executed with efficiency. I
-                thrive on challenges, approaching them with unwavering motivation and a strategic mindset. It's my
-                relentless determination that propels me towards success, be it in academics, sports, or community
-                service.
+                I’m a firm believer in collaboration and effective communication. Punctuality, efficiency, and a
+                strategic mindset are key principles I bring to every project. I thrive in challenging environments,
+                always approaching problems with motivation and a solution-oriented approach.
               </p>
             </div>
 
             <div>
               <h3 className="fw-bolder">A Glimpse into the Future</h3>
               <p className="fs-5 fw-medium">
-                As I step into the next chapter of my journey, I'm excited about the prospects that lie ahead. My
-                portfolio is a testament to the fusion of technical expertise, sportsmanship, and a commitment to making
-                a positive impact on the world.
+                As I continue my journey as a developer, I’m excited about the opportunities to grow and collaborate on
+                impactful projects. My portfolio reflects the fusion of my technical skills, sportsmanship, and
+                commitment to making a positive difference in the world.
               </p>
             </div>
           </div>
