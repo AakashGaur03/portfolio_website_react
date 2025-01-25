@@ -3,261 +3,261 @@
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 body {
-  background-color: #0c0b0b !important;
-  color: white !important;
+	background-color: #0c0b0b !important;
+	color: white !important;
 }
 .done {
-  min-height: 100vh;
-  width: 90vw;
-  background-color: red;
+	min-height: 100vh;
+	width: 90vw;
+	background-color: red;
 }
 .done2 {
-  min-height: 100vh;
-  width: 90vw;
-  background-color: rgb(66, 62, 62);
+	min-height: 100vh;
+	width: 90vw;
+	background-color: rgb(66, 62, 62);
 }
 
 .navbaritems {
-  gap: 40px;
+	gap: 40px;
 }
 .navbaritems a:hover {
-  border-bottom: 2px solid black !important;
-  cursor: pointer;
+	border-bottom: 2px solid black !important;
+	cursor: pointer;
 }
 @media (max-width: 991px) {
-  .mainnavbar {
-    background-color: transparent !important;
-    padding: 0 !important;
-  }
-  .smallScreenNavaToggle {
-    background-color: #787878 !important;
-  }
-  .smallScreenNav {
-    padding: 20px !important;
-    width: 200px;
-    background-color: #787878 !important;
-  }
-  .navbar-collapse {
-    margin-top: 20px !important;
-  }
+	.mainnavbar {
+		background-color: transparent !important;
+		padding: 0 !important;
+	}
+	.smallScreenNavaToggle {
+		background-color: #787878 !important;
+	}
+	.smallScreenNav {
+		padding: 20px !important;
+		width: 200px;
+		background-color: #787878 !important;
+	}
+	.navbar-collapse {
+		margin-top: 20px !important;
+	}
 }
 .mainnavbar {
-  position: fixed !important;
-  min-width: 100vw;
-  top: 0;
-  z-index: 5;
-  background-color: #787878;
+	position: fixed !important;
+	min-width: 100vw;
+	top: 0;
+	z-index: 5;
+	background-color: #787878;
 }
 .active {
-  border-bottom: 2px solid black !important;
+	border-bottom: 2px solid black !important;
 }
 .MainHome {
-  z-index: 1;
-  position: relative;
-  background-image: url("/Images/desktop-wallpaper-portfolio.jpg");
-  min-height: 100vh;
-  background-size: 100% 100%;
-  background-attachment: fixed;
-  /* margin-top: 58px; */
+	z-index: 1;
+	position: relative;
+	background-image: url("/Images/desktop-wallpaper-portfolio.jpg");
+	min-height: 100vh;
+	background-size: 100% 100%;
+	background-attachment: fixed;
+	/* margin-top: 58px; */
 }
 .mainAbout {
-  z-index: 1;
-  position: relative;
-  font-family: "EB Garamond", serif !important;
-  min-height: 100vh;
-  padding-top: 80px;
+	z-index: 1;
+	position: relative;
+	font-family: "EB Garamond", serif !important;
+	min-height: 100vh;
+	padding-top: 80px;
 }
 .AboutImage:hover {
-  cursor: pointer;
-  /* filter: drop-shadow(0.6rem -0.4rem 2rem rgba(51, 12, 88, 0.8)); */
-  filter: drop-shadow(0.6rem -0.4rem 2rem #103440);
+	cursor: pointer;
+	/* filter: drop-shadow(0.6rem -0.4rem 2rem rgba(51, 12, 88, 0.8)); */
+	filter: drop-shadow(0.6rem -0.4rem 2rem #103440);
 }
 .headings {
-  color: rebeccapurple;
+	color: rebeccapurple;
 }
 @media (max-width: 991px) {
-  .imagestyle {
-    height: 60vh;
-  }
+	.imagestyle {
+		height: 60vh;
+	}
 }
 @media (max-width: 767px) {
-  .imagestyle {
-    height: 50vh;
-  }
+	.imagestyle {
+		height: 50vh;
+	}
 }
 @media (max-width: 525px) {
-  .imagestyle {
-    height: 35vh;
-  }
+	.imagestyle {
+		height: 35vh;
+	}
 }
 @media (max-width: 420px) {
-  .imagestyle {
-    height: 30vh;
-  }
+	.imagestyle {
+		height: 30vh;
+	}
 }
 .displayAboutSection {
-  display: flex;
+	display: flex;
 }
 
 @media (max-width: 771px) {
-  .displayAboutSection {
-    display: block;
-  }
+	.displayAboutSection {
+		display: block;
+	}
 }
 .SkillsImage {
-  height: 250px;
-  width: 250px;
+	height: 250px;
+	width: 250px;
 }
 .SkillsImage:hover {
-  cursor: pointer;
-  filter: drop-shadow(0.6rem -3.4rem 2rem rgb(112, 112, 6));
+	cursor: pointer;
+	filter: drop-shadow(0.6rem -3.4rem 2rem rgb(112, 112, 6));
 }
 .mainSkills {
-  z-index: 1;
-  position: relative;
-  font-family: "Poppins", sans-serif !important;
-  font-weight: 500;
-  font-size: large;
-  padding-top: 60px;
+	z-index: 1;
+	position: relative;
+	font-family: "Poppins", sans-serif !important;
+	font-weight: 500;
+	font-size: large;
+	padding-top: 60px;
 
-  min-height: 100vh;
+	min-height: 100vh;
 }
 .AllProgressbar {
-  background-color: #7e7e7e !important;
+	background-color: #7e7e7e !important;
 }
 .progress-bar {
-  background-color: #00163e !important;
+	background-color: #00163e !important;
 }
 
 .mainPortfolio {
-  z-index: 1;
-  position: relative;
-  min-height: 100vh;
-  padding-top: 60px;
+	z-index: 1;
+	position: relative;
+	min-height: 100vh;
+	padding-top: 60px;
 }
 .image-container {
-  position: relative;
-  transition: 0.6s;
+	position: relative;
+	transition: 0.6s;
 }
 
 .imagePortfolio {
-  border-radius: 30px;
-  box-shadow: 0px 0px 19px 16px #171e2b;
+	border-radius: 30px;
+	box-shadow: 0px 0px 19px 16px #171e2b;
 }
 .video-player {
-  position: relative;
-  width: 100%;
-  height: auto;
-  border-radius: 30px;
-  z-index: 1;
-  position: relative;
+	position: relative;
+	width: 100%;
+	height: auto;
+	border-radius: 30px;
+	z-index: 1;
+	position: relative;
 }
 
 .image-container:hover .video-player {
-  transition: 0.6s;
-  transform: scale(1.2);
-  box-shadow: 0px 0px 19px 16px rgb(58, 26, 26);
+	transition: 0.6s;
+	transform: scale(1.2);
+	box-shadow: 0px 0px 19px 16px rgb(58, 26, 26);
 }
 
 .portfoliovideobtn1,
 .portfoliovideobtn2,
 .portfoliovideobtn3 {
-  position: absolute;
-  z-index: 1;
-  position: relative;
-  bottom: 10px;
-  height: 50px;
-  border: 0px !important;
-  border-radius: 30px;
-  transition: 0.4s;
+	position: absolute;
+	z-index: 1;
+	position: relative;
+	bottom: 10px;
+	height: 50px;
+	border: 0px !important;
+	border-radius: 30px;
+	transition: 0.4s;
 }
 
 .portfoliovideobtn1 {
-  left: 0;
-  width: 50%;
-  background: linear-gradient(to right, orange, blue);
-  box-shadow: 0px 0px 12px 16px #00163e;
+	left: 0;
+	width: 50%;
+	background: linear-gradient(to right, orange, blue);
+	box-shadow: 0px 0px 12px 16px #00163e;
 }
 
 .portfoliovideobtn2 {
-  right: 0;
-  width: 50%;
-  box-shadow: 0px 0px 12px 16px #00163e;
-  background: linear-gradient(to right, rgb(65, 56, 41), rgb(93, 93, 202));
+	right: 0;
+	width: 50%;
+	box-shadow: 0px 0px 12px 16px #00163e;
+	background: linear-gradient(to right, rgb(65, 56, 41), rgb(93, 93, 202));
 }
 
 .portfoliovideobtn3 {
-  right: 0;
-  width: 100%;
-  box-shadow: 0px 0px 12px 16px #00163e;
-  background: linear-gradient(to right, orange, blue);
+	right: 0;
+	width: 100%;
+	box-shadow: 0px 0px 12px 16px #00163e;
+	background: linear-gradient(to right, orange, blue);
 }
 .portfoliovideobtn1:hover,
 .portfoliovideobtn2:hover,
 .portfoliovideobtn3:hover {
-  transform: scale(1.2); /* Increase size on hover */
-  transition: 0.4s;
-  z-index: 2;
+	transform: scale(1.2); /* Increase size on hover */
+	transition: 0.4s;
+	z-index: 2;
 }
 
 .mainContactMe {
-  z-index: 1;
-  min-height: 92vh;
-  padding-top: 90px;
+	z-index: 1;
+	min-height: 92vh;
+	padding-top: 90px;
 
-  position: relative;
+	position: relative;
 }
 .ContactMe {
-  position: absolute;
-  top: 78px;
-  left: 50%;
-  transform: translateX(-50%);
+	position: absolute;
+	top: 78px;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
 .bubble {
-  width: 20px;
-  height: 20px;
-  background-color: #1d1c26;
-  border-radius: 50%;
-  position: absolute;
-  transition: 0.2s ease-in-out;
-  transform: translate(-50%, -50%);
+	width: 20px;
+	height: 20px;
+	background-color: #1d1c26;
+	border-radius: 50%;
+	position: absolute;
+	transition: 0.2s ease-in-out;
+	transform: translate(-50%, -50%);
 }
 .bubble:hover,
 .bubble.hovered {
-  transform: scale(1.5);
-  /* background-color: orange; */
-  background-color: rgb(100, 76, 32);
+	transform: scale(1.5);
+	/* background-color: orange; */
+	background-color: rgb(100, 76, 32);
 }
 .contentContact {
-  border: 2px solid white;
-  border-radius: 30px;
-  position: relative;
-  z-index: 2;
-  display: flex;
-  padding: 15px;
-  justify-content: center;
-  gap: 30px;
+	border: 2px solid white;
+	border-radius: 30px;
+	position: relative;
+	z-index: 2;
+	display: flex;
+	padding: 15px;
+	justify-content: center;
+	gap: 30px;
 }
 .anchorContact {
-  color: #e3ca7e;
-  text-decoration: none;
-  transition: 0.6s;
+	color: #e3ca7e;
+	text-decoration: none;
+	transition: 0.6s;
 }
 .anchorContact:hover {
-  color: white;
-  transition: 0.6s;
-  transform: scale(1.2);
+	color: white;
+	transition: 0.6s;
+	transform: scale(1.2);
 }
 .iconsContact {
-  color: #2f7e93;
+	color: #2f7e93;
 }
 
 .mainBubbles {
-  position: fixed;
-  z-index: 0;
+	position: fixed;
+	z-index: 0;
 }
-
+/* 
 @keyframes fadeTop {
   from {
     opacity: 0;
@@ -272,11 +272,9 @@ body {
 @keyframes fadeLeft {
   from {
     opacity: 0;
-    /* transform: translateX(-70px); */
     margin-left: -70px;
   }
   to {
-    /* transform: translateX(0px); */
     margin-left: 0px;
 
     opacity: 1;
@@ -287,12 +285,10 @@ body {
   from {
     opacity: 0;
     margin-left: 170px;
-    /* transform: translateX(70px); */
   }
   to {
     margin-left: 0px;
 
-    /* transform: translateX(0px); */
     opacity: 1;
   }
 }
@@ -309,35 +305,34 @@ body {
   .compActiveRight {
     animation: none;
   }
-}
+} */
 .hidden {
-  display: none;
+	display: none;
 }
 .loaderClass {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
 }
 .mainFooter {
-  position: relative;
-  background-color: #787878;
-  z-index: 1;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  color: black;
+	position: relative;
+	background-color: #787878;
+	z-index: 1;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: black;
 }
-.footerHeading{
-  font-size: 32px;
-  font-weight: 500;
+.footerHeading {
+	font-size: 32px;
+	font-weight: 500;
 }
 @media (max-width: 525px) {
-  .mainFooter {
-    display: block;
-    text-align: center;
-  }
-.footerHeading{
-  font-size: 18px;
-}
-
+	.mainFooter {
+		display: block;
+		text-align: center;
+	}
+	.footerHeading {
+		font-size: 18px;
+	}
 }
