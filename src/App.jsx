@@ -6,28 +6,28 @@ import About from "./components/About";
 import Skills from "./components/Skills";
 import Portfolio from "./components/Portfolio";
 import ContactMe from "./components/ContactMe";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import BubbleComponent from "./components/BubbleComponent";
 import Footer from "./components/Footer";
 
 function App() {
-  const [activeLink,setActiveLink]=useState('home')
+	const [activeLink, setActiveLink] = useState("home");
 
-  const handleActiveComponent=(link)=>{
-    setActiveLink(link)
-  }
-  return (
-    <>
-      <BubbleComponent />
-      <MainNavbar onNavItemClick={handleActiveComponent} />
-      <Home isActive={activeLink==='home'}/>
-      <About isActive={activeLink==='about'}/>
-      <Skills isActive={activeLink==='skills'} />
-      <Portfolio isActive={activeLink==='portfolio'}/>
-      <ContactMe isActive={activeLink==='contact'}/>
-      <Footer />
-    </>
-  );
+	const handleActiveComponent = (link) => {
+		setActiveLink(link);
+	};
+	return (
+		<>
+			<BubbleComponent />
+			<MainNavbar onNavItemClick={handleActiveComponent} />
+			<Home isActive={activeLink === "home"} />
+			<About isActive={activeLink === "about"} />
+			<Skills isActive={activeLink === "skills"} />
+			<Portfolio isActive={activeLink === "portfolio"} />
+			<ContactMe isActive={activeLink === "contact"} />
+			<Footer />
+		</>
+	);
 }
 
 export default App;
